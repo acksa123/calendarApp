@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+    font-family: "Lato", "sans-serif";
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.one{
+    width: 70%;
+}
+.wrapper{
+    padding-top: 3%;
+    display: flex;
+    width: 100vw;
+    height: 120vh;
+    background-color: #dfe6e9;
+}
+.calendar{
+    margin: auto;
+    width: 70%;
+    
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.2);
+}
+.month{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 40px 30px;
+}
+.weekends{
+    background-color:#27ae60 ;
+
+    color: #fff;
+    
+}
+
+.days{
+   
+    font-weight: 300;
+    padding: 30px ;
+}
+.days tr{
+ 
+    margin-bottom: 50px;
+    padding: 10px 0;
+    transition: all 0.4s;
+}
+.weekends div,
+.days div{
+    width: 14.28%;
+    text-align: center;
+}
+.days td:hover{
+    background-color: #dfe6e9;
+    cursor: pointer;
+}
+
+.prev-date{
+    color: #999;
+}
+.next-date{
+  color: #999;
+}
+
+#month{
+    font-size: 30px;
+    font-weight: 400;
+}
+#prev,
+#next{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+.prev:hover,
+.next:hover{
+    background-color: rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  border: solid black;
+  align-items: center;
+
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#ename{
+  width: 60%;
+}
+.modal-header{
+  color: black;
+
+
+}
+.modal-header h5{
+  padding-left: 40%;
+}
+
+textarea{
+  border-color: #27ae60;
+}
+ul{
+  text-align:left;
+  padding:0;
+  
+}
+ul li{
+  display: flex;
+  list-style: none;
+}
+ul li i{
+  text-align: right;
+  flex: 1;
+}
+.form-color{
+  color: #27ae60;
+}
